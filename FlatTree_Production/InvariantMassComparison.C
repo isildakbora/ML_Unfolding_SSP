@@ -7,10 +7,6 @@ int main()
     TFile* f = TFile::Open("tag_1_delphes_events.root");
     f->ls();
 
-    TTree* tree = (TTree*)f->FindObjectAny("Delphes");
-    
-    tree->Print();
-
     double pt, eta, phi, mass, iso_var;
     int charge, pdgid;
     int charge1, charge2;
